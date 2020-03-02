@@ -1,7 +1,6 @@
 # VHP Webapp
 
 ```bash
-
 # 1. Clone the repository...
 # with ssh
 git clone git@github.com:devsindata/VHP-Web.git
