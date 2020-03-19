@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <router-view />
+    <!-- <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -35,20 +36,20 @@
 
     <v-content>
       <HelloWorld />
-    </v-content>
+    </v-content> -->
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+// import HelloWorld from './components/HelloWorld.vue';
 
 export default Vue.extend({
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+  // components: {
+  //   HelloWorld,
+  // },
 
   data: () => ({
     //
@@ -57,7 +58,7 @@ export default Vue.extend({
     const coba = await this.$api.post(
       'logserver/rest/loginServer/loadLanguages'
     );
-    console.log('mounted -> coba', coba);
+    // console.log('mounted -> coba', coba);
   },
 });
 </script>
