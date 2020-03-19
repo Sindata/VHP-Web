@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import FOCIndex from '../views/FOC/Index.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,13 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
+  // Module FOC Start
+  {
+    path: '/cashier-front-office',
+    name: 'FOCHome',
+    component: FOCIndex,
+  },
+  // Module FOC End
 ];
 
 const router = new VueRouter({
